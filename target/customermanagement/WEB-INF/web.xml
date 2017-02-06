@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+
+	<!-- This is a context init parameter getServletContext().getInitParameter -->
+	<context-param>
+		<param-name>email</param-name>
+		<param-value>admin@example.com</param-value>
+	</context-param>
+
+	<context-param>
+		<description>Location to store uploaded file</description>
+		<param-name>file-upload</param-name>
+		<param-value>/opt/tomcat/apache-tomcat-7.0.65/uploads/</param-value>
+	</context-param>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>CustomerList</servlet-name>
+		<servlet-class>com.rupp.evening.assign.CustomerList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerList</servlet-name>
+		<url-pattern>customerList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CustomerInfo</servlet-name>
+		<servlet-class>com.rupp.evening.assign.CustomerInfo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerInfo</servlet-name>
+		<url-pattern>loadCustomer</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CustomerDelete</servlet-name>
+		<servlet-class>com.rupp.evening.assign.CustomerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerDelete</servlet-name>
+		<url-pattern>deleteCustomer</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CustomerEdit</servlet-name>
+		<servlet-class>com.rupp.evening.assign.CustomerEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerEdit</servlet-name>
+		<url-pattern>editCustomer</url-pattern>
+	</servlet-mapping>		<servlet>
+		<servlet-name>CustomerNew</servlet-name>
+		<servlet-class>com.rupp.evening.assign.CustomerNew</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerNew</servlet-name>
+		<url-pattern>newCustomer</url-pattern>
+	</servlet-mapping>
+
+</web-app>
