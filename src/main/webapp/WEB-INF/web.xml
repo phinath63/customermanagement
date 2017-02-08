@@ -33,6 +33,7 @@
 	<servlet-mapping>
 		<servlet-name>CustomerList</servlet-name>
 		<url-pattern>/customerList</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
