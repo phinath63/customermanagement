@@ -269,6 +269,9 @@
 			success:function(){
 				alert("New Cucstomer is added successfully!");
 				location.reload();
+			},
+			error:function(){
+				alert("Fail to add customer");
 			}
 		});
 	}
@@ -278,6 +281,9 @@
 			success:function(){
 				alert("Update successfully!");
 				location.reload();
+			},
+			error:function(){
+				alert("Fail to update customer");
 			}
 		});
 	}
@@ -290,6 +296,9 @@
 				success:function(data){
 					alert("Customer has been deleted!");
 					location.reload();
+				},
+				error:function(){
+					alert("Fail to delete customer");
 				}
 				
 			});

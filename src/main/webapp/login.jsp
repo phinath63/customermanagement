@@ -8,8 +8,8 @@
 
 <title>Login</title>
 
-<link rel="stylesheet" href="css/vendor.css" />
-<link rel="stylesheet" href="css/app.css" />
+<link rel="stylesheet" href="/css/vendor.css" />
+<link rel="stylesheet" href="/css/app.css" />
 
 </head>
 
